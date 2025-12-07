@@ -3,6 +3,7 @@ package mainClass;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import contacts.CreateContacts;
 import leads.CreateLeads;
 import openBrowserAndLogin.Login;
 import openBrowserAndLogin.OpenBrowser;
@@ -16,6 +17,7 @@ public class MainClass {
 		Login.login();
 		CreateLeads.createLead();
 		CreateOrganization.createOrganization();
+		CreateContacts.createContacts();
 		driver.close();
 		
 	}
